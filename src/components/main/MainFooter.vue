@@ -2,41 +2,14 @@
   <div class="bg-lightblue">
     <div class="container">
       <ul class="d-flex">
-        <li class="d-flex">
+        <li v-for="(image,index) in images" :key="index" class="d-flex">
           <img
-            src="..\..\assets\img\buy-comics-digital-comics.png"
-            alt="Digital Comics"
+            :src="require(`../../assets/img/${image.url}`)"
+            :alt="image.alt"
           />
-          <a href="#">DIGITAL COMICS</a>
-        </li>
-        <li>
-          <img
-            src="..\..\assets\img\buy-comics-merchandise.png"
-            alt="Merchandise"
-          />
-          <a href="#">DC MERCHANDISE</a>
-        </li>
-        <li>
-          <img
-            src="..\..\assets\img\buy-comics-subscriptions.png"
-            alt="Subscriptions"
-          />
-          <a href="#">SUBSCRIPTION</a>
-        </li>
-        <li>
-          <img
-            src="..\..\assets\img\buy-comics-shop-locator.png"
-            alt="Shop Locator"
-          />
-          <a href="#">COMIC SHOP LOCATOR</a>
-        </li>
-        <li>
-          <img
-            src="..\..\assets\img\buy-dc-power-visa.svg"
-            alt="Digital Comics"
-          />
-          <a href="#">DC POWER VISA</a>
-        </li>
+          <a href="#">{{image.text}}</a>
+        </li> 
+       
       </ul>
     </div>
   </div>
@@ -45,6 +18,42 @@
 <script>
 export default {
   name: "MainFooter",
+  data(){
+    return {
+      images:[{
+        url: "buy-comics-digital-comics.png",
+        alt: "Digital Comics",
+        text: "DIGITAL COMICS",
+      },
+
+      {
+        url: "buy-comics-merchandise.png",
+        alt: "Merchandise",
+        text: "DC MERCHANDISE",
+      },
+
+      {
+        url: "buy-comics-subscriptions.png",
+        alt: "Subscriptions",
+        text: "SUBSCRIPTION",
+      },
+
+      {
+        url: "buy-comics-shop-locator.png",
+        alt: "Shop Locator",
+        text: "COMIC SHOP LOCATOR",
+      },
+
+      {
+        url: "buy-dc-power-visa.svg",
+        alt: "Digital Comics",
+        text: "DC POWER VISA",
+      },     
+
+
+      ],
+    }
+  }
 };
 </script>
 
