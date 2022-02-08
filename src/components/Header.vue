@@ -30,11 +30,19 @@
 
 <script>
 export default {
-    name: 'Header',
+    name: 'Header',    
 }
 </script>
 
 <style scoped>
+img{
+    width: 50%;
+}
+
+header{
+    padding: 30px 0;
+}
+
 .d-flex {
     display: flex;
 }

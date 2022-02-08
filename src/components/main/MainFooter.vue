@@ -56,7 +56,7 @@ export default {
   background-color: dodgerblue;
 }
 ul {
-  padding: 30px 0;
+  padding: 50px 0;
   justify-content: center;
 }
 
@@ -70,11 +70,10 @@ a {
   text-decoration: none;
   color: white;
   font-size: 12px;
-  margin: 0 10px;
+  margin: 0 30px;
 }
 
 img {
-  height: 50px;
-  
+  height: 50px;  
 }
 </style>

@@ -2,6 +2,7 @@
   <div class="background-image">
     <div class="container">
       <div class="row">
+
         <div class="col">
           <h4>DC COMICS</h4>
           <ul>
@@ -19,6 +20,7 @@
             <li>Shop DC Collectibles</li>
           </ul>
         </div>
+
         <div class="col">
           <h4>DC</h4>
           <ul>
@@ -35,6 +37,7 @@
             <li>Contact Us</li>
           </ul>
         </div>
+
         <div class="col">
           <h4>SITES</h4>
           <ul>
@@ -45,7 +48,11 @@
             <li>DC Power Visa</li>
           </ul>
         </div>
-      </div>
+
+        <div class="col" id="dc-logo">
+          
+        </div>        
+      </div>      
     </div>
   </div>
 </template>
@@ -56,11 +63,20 @@ export default {};
 
 <style scoped>
 .background-image{
-  background-image:url('../../assets/img/footer-bg.jpg')  
+  background-image:url('../../assets/img/footer-bg.jpg');  
 }
+
+#dc-logo{
+  background-image:url('../../assets/img/dc-logo-bg.png');
+  height:450px;
+  width:100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .row {
   display: flex;
-  padding: 30px 0;
+  padding: 30px 0; 
 }
 h4 {
   padding: 20px 0;
@@ -76,6 +92,6 @@ li {
 }
 
 .col {
-  margin-right: 50px;
+  margin-right: 50px;  
 }
 </style>

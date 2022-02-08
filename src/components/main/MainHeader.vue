@@ -11,5 +11,9 @@ name: 'MainHeader'
 </script>
 
 <style>
+p{
+  padding:50px 0;
+  color: white;
+}
 
 </style>
