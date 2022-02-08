@@ -6,14 +6,9 @@
         <div class="col">
           <h4>DC COMICS</h4>
           <ul>
-            <li>Characters</li>
-            <li>Comics</li>
-            <li>Movies</li>
-            <li>TV</li>
-            <li>Games</li>
-            <li>Video</li>
-            <li>News</li>
+            <li v-for="(comic,index) in comics" :key="index">{{comic.text}}</li>            
           </ul>
+
           <h4>SHOP</h4>
           <ul>
             <li>Shop DC</li>
@@ -23,42 +18,133 @@
 
         <div class="col">
           <h4>DC</h4>
-          <ul>
-            <li>Terms Of Use</li>
-            <li>Privacy policy (New)</li>
-            <li>Ad Choices</li>
-            <li>Advertising</li>
-            <li>Jobs</li>
-            <li>Subscriptions</li>
-            <li>Talent Workshops</li>
-            <li>CPSC Certificates</li>
-            <li>Ratings</li>
-            <li>Shop Help</li>
-            <li>Contact Us</li>
+          <ul>            
+            <li v-for="(ud,index) in ud" :key="index">{{ud.text}}</li>              
           </ul>
         </div>
 
         <div class="col">
           <h4>SITES</h4>
           <ul>
-            <li>DC</li>
-            <li>MAD Magazine</li>
-            <li>DC Kids</li>
-            <li>DC Universe</li>
-            <li>DC Power Visa</li>
+            <li v-for="(site,index) in sites" :key="index">{{site.text}}</li>   
           </ul>
         </div>
 
-        <div class="col" id="dc-logo">
-          
-        </div>        
+        <div class="col" id="dc-logo"></div>        
       </div>      
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name:'TopFooter',
+  data(){
+    return {
+      comics: [{
+        text: "Characters",
+        active: true,
+      },
+      {
+        text: "Comics",
+        active: false,
+      },
+      {
+        text: "Movies",
+        active: false,
+      },
+      {
+        text: "TV",
+        active: false,
+      },
+      {
+        text: "Video",
+        active: false,
+      },
+      {
+        text: "News",
+        active: false,
+      },     
+      ],
+
+
+      /* UD */
+
+
+       ud: [{
+        text: "Terms Of Use",
+        active: true,
+      },
+      {
+        text: "Privacy policy (New)",
+        active: false,
+      },
+      {
+        text: "Ad Choices",
+        active: false,
+      },
+      {
+        text: "Advertising",
+        active: false,
+      },
+      {
+        text: "Jobs",
+        active: false,
+      },
+      {
+        text: "Subscriptions",
+        active: false,
+      },     
+      {
+        text: "Talent Workshops",
+        active: false,
+      },     
+      {
+        text: "CPSC Certificates",
+        active: false,
+      },     
+      {
+        text: "Ratings",
+        active: false,
+      },     
+      {
+        text: "Shop Help",
+        active: false,
+      },     
+      {
+        text: "Contact Us",
+        active: false,
+      },     
+      ],
+
+
+      /* SITES */
+
+
+      sites: [{
+        text: "DC",
+        active: true,
+      },
+      {
+        text: "MAD Magazine",
+        active: false,
+      },
+      {
+        text: "DC Kids",
+        active: false,
+      },
+      {
+        text: "DC Universe",
+        active: false,
+      },
+      {
+        text: "DC Power Visa",
+        active: false,
+      },     
+      ],
+    }
+  }
+};
 </script>
 
 <style scoped>
@@ -92,6 +178,6 @@ li {
 }
 
 .col {
-  margin-right: 50px;  
+  margin-right: 100px;  
 }
 </style>
