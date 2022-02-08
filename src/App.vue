@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <Header/>
     <Main/>
     <Footer/>
@@ -22,6 +22,11 @@ export default {
 </script>
 
 <style lang="scss">
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .container{
   max-width: 1200px;
   margin: 0 auto;

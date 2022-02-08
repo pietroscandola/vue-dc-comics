@@ -1,62 +1,80 @@
 <template>
   <div class="bg-lightblue">
+    <div class="container">
       <ul class="d-flex">
-          <li class="d-flex">
-              <img src="..\..\assets\img\buy-comics-digital-comics.png" alt="Digital Comics">
-              <a href="#">DIGITAL COMICS</a>            
-          </li>
-          <li>
-              <img src="..\..\assets\img\buy-comics-merchandise.png" alt="Merchandise">
-              <a href="#">DC MERCHANDISE</a>            
-          </li>
-          <li>
-              <img src="..\..\assets\img\buy-comics-subscriptions.png" alt="Subscriptions">
-              <a href="#">SUBSCRIPTION</a>            
-          </li>
-          <li>
-              <img src="..\..\assets\img\buy-comics-shop-locator.png" alt="Shop Locator">
-              <a href="#">COMIC SHOP LOCATOR</a>            
-          </li>
-          <li>
-              <img src="..\..\assets\img\buy-dc-power-visa.svg" alt="Digital Comics">
-              <a href="#">DC POWER VISA</a>            
-          </li>         
+        <li class="d-flex">
+          <img
+            src="..\..\assets\img\buy-comics-digital-comics.png"
+            alt="Digital Comics"
+          />
+          <a href="#">DIGITAL COMICS</a>
+        </li>
+        <li>
+          <img
+            src="..\..\assets\img\buy-comics-merchandise.png"
+            alt="Merchandise"
+          />
+          <a href="#">DC MERCHANDISE</a>
+        </li>
+        <li>
+          <img
+            src="..\..\assets\img\buy-comics-subscriptions.png"
+            alt="Subscriptions"
+          />
+          <a href="#">SUBSCRIPTION</a>
+        </li>
+        <li>
+          <img
+            src="..\..\assets\img\buy-comics-shop-locator.png"
+            alt="Shop Locator"
+          />
+          <a href="#">COMIC SHOP LOCATOR</a>
+        </li>
+        <li>
+          <img
+            src="..\..\assets\img\buy-dc-power-visa.svg"
+            alt="Digital Comics"
+          />
+          <a href="#">DC POWER VISA</a>
+        </li>
       </ul>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'MainFooter',
-}
+  name: "MainFooter",
+};
 </script>
 
 <style scoped>
-.d-flex{
-    display: flex;
+.d-flex {
+  display: flex;
 }
-.bg-lightblue{
-    background-color:dodgerblue;    
+.bg-lightblue {
+  background-color: dodgerblue;
 }
-ul{
-    padding: 30px 0;
-}
-
-li{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+ul {
+  padding: 30px 0;
+  justify-content: center;
 }
 
-a{
-    text-decoration:none;
-    color: white;
-    font-size:12px;
-    margin: 0 10px;
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-img{
-    width:25%;
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  margin: 0 10px;
 }
 
+img {
+  height: 50px;
+  
+}
 </style>
