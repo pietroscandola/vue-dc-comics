@@ -30,7 +30,7 @@
 
 <script>
 export default {
-
+    name: 'Header',
 }
 </script>
 
@@ -48,6 +48,12 @@ export default {
     display:flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+.col-left figure{
+    display:flex;
+    justify-content: flex-start;
+    align-items: start;
 }
 
 
