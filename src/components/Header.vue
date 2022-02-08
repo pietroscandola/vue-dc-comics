@@ -10,7 +10,7 @@
           </div>
           <div class="col-right">
             <ul class="d-flex">
-              <li v-for="(link,index) in links" :key="index"><a href="#">{{link.text}}</a></li>         
+              <li v-for="(link,index) in links" :key="index" :class="{active: link.active}" ><a href="#">{{link.text}}</a></li>         
             </ul>
           </div>
         </div>
