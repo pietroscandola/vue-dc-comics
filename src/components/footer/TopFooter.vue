@@ -149,7 +149,9 @@ export default {
 
 <style scoped>
 .background-image{
-  background-image:url('../../assets/img/footer-bg.jpg');  
+  background-image:url('../../assets/img/footer-bg.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;  
 }
 
 #dc-logo{
@@ -161,8 +163,7 @@ export default {
 }
 
 .row {
-  display: flex;
-  padding: 30px 0; 
+  display: flex;  
 }
 h4 {
   padding: 20px 0;
@@ -177,7 +178,9 @@ li {
   color: white;
 }
 
-.col {
-  margin-right: 100px;  
+.col{
+  width: 200px;
+  margin-right: 30px;
 }
+
 </style>

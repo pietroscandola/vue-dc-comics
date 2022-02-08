@@ -1,21 +1,29 @@
 <template>
-  <div class="container">
-    <header>
-      <nav>
-        <div class="row d-flex">
-          <div class="col-left">
-            <figure>
-              <img src="../assets/img/dc-logo.png" alt="Logo DC" />
-            </figure>
+  <div class="bg-white">
+    <div class="container">
+      <header>
+        <nav>
+          <div class="row d-flex">
+            <div class="col-left">
+              <figure>
+                <img src="../assets/img/dc-logo.png" alt="Logo DC" />
+              </figure>
+            </div>
+            <div class="col-right">
+              <ul class="d-flex">
+                <li
+                  v-for="(link, index) in links"
+                  :key="index"
+                  :class="{ active: link.active }"
+                >
+                  <a href="#">{{ link.text }}</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-right">
-            <ul class="d-flex">
-              <li v-for="(link,index) in links" :key="index" :class="{active: link.active}" ><a href="#">{{link.text}}</a></li>         
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
+    </div>
   </div>
 </template>
 
@@ -71,13 +79,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 img {
-  width: 50%;
+  width: 80%;
 }
-
-header {
-  padding: 30px 0;
+.bg-white {
+  background-color: white;
 }
 
 .d-flex {
@@ -87,6 +94,7 @@ header {
 .row {
   display: flex;
   justify-content: space-between;
+  align-items:center;
 }
 
 .col-right {
@@ -102,20 +110,19 @@ header {
 }
 
 li {
-  margin: 0 15px;
+  border-bottom: 5px solid transparent;
   list-style-type: none;
   font-size: 14px;
   font-weight: bold;
-  padding: 20px 0;
-}
+  padding: 60px 10px;
 
-li a {
-  color: black;
-  text-decoration: none;
-}
-
-.active {
-  color: dodgerblue;
-  border-bottom: 5px solid dodgerblue;
+  &.active {
+    color: dodgerblue;
+    border-bottom: 5px solid dodgerblue;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
 }
 </style>

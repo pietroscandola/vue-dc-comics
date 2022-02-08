@@ -27,6 +27,11 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  margin:20px 0;
+  background-color: black;
+}
+
 .container{
   max-width: 1200px;
   margin: 0 auto;
