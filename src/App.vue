@@ -112,18 +112,5 @@ export default {
 </script>
 
 <style lang="scss">
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-img{
-  max-width: 100%;
-}
+@import "./assets/scss/style.scss"
 </style>
