@@ -80,7 +80,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+@import "../assets/scss/style.scss";
 img {
   width: 80%;
 }
@@ -89,23 +89,23 @@ img {
 }
 
 .d-flex {
-  display: flex;
+  display: $d-flex;
 }
 
 .row {
-  display: flex;
+  display: $d-flex;
   justify-content: space-between;
   align-items:center;
 }
 
 .col-right {
-  display: flex;
+  display: $d-flex;
   align-items: center;
   justify-content: flex-end;
 }
 
 .col-left figure {
-  display: flex;
+  display: $d-flex;
   justify-content: flex-start;
   align-items: start;
 }
