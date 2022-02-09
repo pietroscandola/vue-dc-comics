@@ -1,6 +1,6 @@
 <template>
   <main>
-    <MainHeader />
+    <MainHeader :products='products' />
     <MainFooter />    
   </main>
 </template>
@@ -14,7 +14,8 @@ export default {
     components:{
       MainHeader,
       MainFooter,           
-    }
+    },
+    props: ["products"]
 }
 </script>
 
