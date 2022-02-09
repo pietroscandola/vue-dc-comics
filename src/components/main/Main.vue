@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-black">
+  <main>
     <MainHeader />
     <MainFooter />    
   </main>
@@ -19,8 +19,5 @@ export default {
 </script>
 
 <style>
-.bg-black {
-  background-color:black;
-}
 
 </style>
